@@ -18,10 +18,15 @@ public class AnswerActivity1 extends AppCompatActivity {
         tvAnswer = findViewById(R.id.textView);
         Intent received = getIntent();
         String QuestionSelected = received.getStringExtra("Question");
-        tvAnswer.setText(QuestionSelected + " answer is : Queue");
-
-        
-
+         if(QuestionSelected.equalsIgnoreCase("Q1"))
+        {
+            tvAnswer.setText("Q1 answer is QUEUE");
+        }
+        else
+        {
+            tvAnswer.setText("Q2 answer is Gone");
+        }
+       
 
 
 
