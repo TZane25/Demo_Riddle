@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent = new Intent(MainActivity.this, AnswerActivity1.class);
-                intent.putExtra("Question2","Q2");
+                intent.putExtra("Question","Q2");
                 startActivity(intent);
             }
         });
